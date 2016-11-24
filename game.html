@@ -1,0 +1,56 @@
+<!--为什么必须用canvas而不是直接用html让人物跑起来，因为canvas才能检测到像素点，才能实现碰撞-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src = "js/jquery.js"></script>
+    <script src="js/hit.js"></script>
+    <!---->
+    <script src="js/run.js"></script>
+    <script src="js/games.js"></script>
+    <!--舞台 -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<canvas></canvas>
+<div class = "start text-center">
+    <div class = "welcome text-center">
+        超级酷跑
+    </div>
+    <button type = "button" class = "btn btn-success">开始游戏</button>
+</div>
+<div class = "mas">
+</div>
+<!--跑-->
+<img src="img/1.png" alt="" class="run" hidden>
+<img src="img/2.png" alt="" class="run" hidden>
+<img src="img/3.png" alt="" class="run" hidden>
+<img src="img/4.png" alt="" class="run" hidden>
+<img src="img/5.png" alt="" class="run" hidden>
+<img src="img/6.png" alt="" class="run" hidden>
+<img src="img/7.png" alt="" class="run" hidden>
+<img src="img/8.png" alt="" class="run" hidden>
+<!--跳-->
+<img src="img/jump.png" alt="" class="jump" hidden>
+<!--障碍物-->
+
+<img src="img/za1.png" alt="" class="hinder" hidden>
+<img src="img/za2.png" alt="" class="hinder" hidden>
+<img src="img/za3.png" alt="" class="hinder" hidden>
+<img src="img/za4.png" alt="" class="hinder" hidden>
+<img src="img/za5.png" alt="" class="hinder" hidden>
+<img src="img/za6.png" alt="" class="hinder" hidden>
+<img src="img/za7.png" alt="" class="hinder" hidden>
+<img src="img/za8.png" alt="" class="hinder" hidden>
+<!--lift-->
+<div class = "life">生命值：<span>3</span></div>
+<div class = "jifen">积分：<span>0</span></div>
+</body>
+</html>

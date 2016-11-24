@@ -1,0 +1,103 @@
+html,body{
+    margin:0;
+    padding:0;
+    background:#000;
+    overflow: hidden;
+}
+/*背景图*/
+canvas{
+    background:url(../img/city1.jpg) repeat-x;
+    background-size:contain;
+}
+.start{
+    width:30%;
+    height:40%;
+    position:fixed;
+    background:url(../img/start.png);
+    background-size:100% 100%;
+    left:0;top:0;right:0;bottom:0;
+    margin:auto;
+    /*border-radius:10px;*/
+    /*border:1px solid #ccc;*/
+    /*box-shadow:0 0 10px #000;*/
+    z-index:1;
+    animation:start 2s ease forwards;
+}
+.btn{
+    text-align: center;
+}
+.mas{
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0;top:0;
+    background:rgba(0,0,0,0.5);
+    animation:mas 2s ease forwards;
+}
+.welcome{
+    text-align:center;
+    font-size:30px;
+    line-height:100px;
+    color:#fff;
+
+}
+@keyframes start{
+     0%{
+         transform:translate(0,-1000px);
+     }
+     100%{
+         trasnform:translate(0,0);
+     }
+ }
+@keyframes mas{
+    0%{
+        background:rgba(0,0,0,0.2);
+    }
+    100%{
+        background:rgba(0,0,0,0.6);
+    }
+}
+@keyframes mas1{
+    0%{
+        background:rgba(0,0,0,0.6);
+    }
+    100%{
+        background:rgba(0,0,0,0);
+    }
+}
+@keyframes start1{
+    0%{
+        transform:translate(0,0);
+    }
+    100%{
+        transform:translate(0,-1000px);
+    }
+}
+.life{
+    width:200px;
+    height:150px;
+    /*background:red;*/
+    background:url(../img/life2.png);
+    background-size:100% 100%;
+    position:fixed;
+    right:50px;
+    top:20px;
+    text-align: center;
+    line-height:160px;
+    font-size:24px;
+    font-weight:bold;
+}
+.jifen {
+    width: 200px;
+    height: 150px;
+    /*background:red;*/
+    background: url(../img/life2.png);
+    background-size: 100% 100%;
+    position: fixed;
+    right: 50px;
+    top: 150px;
+    text-align: center;
+    line-height: 160px;
+    font-size: 24px;
+    font-weight: bold;
+}
